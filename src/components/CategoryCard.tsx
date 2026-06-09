@@ -46,7 +46,7 @@ export default function CategoryCard({ category, label, index }: Props) {
           <h3 className="text-white text-base sm:text-lg font-bold tracking-wide uppercase mb-2 leading-tight">
             {label}
           </h3>
-          <span className="inline-flex items-center gap-1.5 text-white/70 text-xs tracking-wider uppercase group-hover:text-white group-hover:gap-3 transition-all duration-300">
+          <span className="inline-flex items-center gap-1.5 text-white/70 text-xs tracking-wider uppercase group-hover:text-white group-hover:gap-3 transition-[color,gap] duration-300">
             Comprar
             <ArrowRight size={11} />
           </span>

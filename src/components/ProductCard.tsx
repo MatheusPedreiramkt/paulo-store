@@ -25,7 +25,6 @@ export default function ProductCard({ product, index = 0 }: Props) {
     ? (product.colors.find((c) => c.name === hoveredColor) ?? product.colors[0])
     : null;
 
-  // Imagem principal: cor em hover, primeira cor, ou primeira da galeria
   const mainImage =
     displayColor?.image ??
     product.gallery?.[0] ??
@@ -56,7 +55,7 @@ export default function ProductCard({ product, index = 0 }: Props) {
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, amount: 0.1 }}
       transition={{ duration: 0.55, delay: (index % 4) * 0.04, ease: [0.22, 1, 0.36, 1] }}
-      className="group bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col"
+      className="group bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-lg transition-shadow duration-300 flex flex-col"
     >
       {/* Imagem */}
       <Link
@@ -68,12 +67,12 @@ export default function ProductCard({ product, index = 0 }: Props) {
         <img
           src={mainImage}
           alt={product.name}
-          className="w-full h-full object-cover transition-all duration-500 group-hover:scale-105"
+          className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
         />
 
         {/* Hover overlay */}
-        <div className="absolute inset-0 bg-black/0 group-hover:bg-black/12 transition-all duration-300 flex items-center justify-center">
-          <span className="opacity-0 group-hover:opacity-100 translate-y-2 group-hover:translate-y-0 transition-all duration-300 inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-white text-gray-900 text-xs font-semibold tracking-wide shadow-lg">
+        <div className="absolute inset-0 bg-transparent group-hover:bg-black/10 transition-colors duration-300 flex items-center justify-center">
+          <span className="opacity-0 group-hover:opacity-100 translate-y-2 group-hover:translate-y-0 transition-[opacity,transform] duration-300 inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-white text-gray-900 text-xs font-semibold tracking-wide shadow-lg">
             <Eye size={14} />
             Ver detalhes
           </span>
@@ -91,7 +90,7 @@ export default function ProductCard({ product, index = 0 }: Props) {
               DESTAQUE
             </span>
           )}
-          <span className="px-2 py-0.5 rounded-sm bg-white/90 backdrop-blur-sm text-[#005BFF] text-[8px] sm:text-[9px] font-bold tracking-[0.12em] uppercase truncate">
+          <span className="px-2 py-0.5 rounded-sm bg-white text-[#005BFF] text-[8px] sm:text-[9px] font-bold tracking-[0.12em] uppercase truncate">
             {CATEGORY_LABELS[product.category]}
           </span>
         </div>
@@ -100,7 +99,7 @@ export default function ProductCard({ product, index = 0 }: Props) {
       {/* Info */}
       <div className="p-4 flex flex-col flex-1">
         <Link href={`/produto/${product.slug}`}>
-          <h3 className="text-gray-900 font-semibold text-sm leading-snug mb-2 hover:text-[#005BFF] transition-colors line-clamp-2">
+          <h3 className="text-gray-900 font-semibold text-sm leading-snug mb-2 hover:text-[#005BFF] transition-colors duration-200 line-clamp-2">
             {product.name}
           </h3>
         </Link>
@@ -116,7 +115,7 @@ export default function ProductCard({ product, index = 0 }: Props) {
                   aria-label={c.name}
                   onMouseEnter={() => setHoveredColor(c.name)}
                   onMouseLeave={() => setHoveredColor(null)}
-                  className={`w-4 h-4 rounded-full flex-shrink-0 transition-all duration-150 cursor-pointer ${
+                  className={`w-4 h-4 rounded-full flex-shrink-0 transition-transform duration-150 cursor-pointer ${
                     (hoveredColor ?? product.colors[0].name) === c.name
                       ? "ring-2 ring-offset-1 ring-gray-400 scale-110"
                       : "ring-1 ring-black/10"
@@ -169,10 +168,10 @@ export default function ProductCard({ product, index = 0 }: Props) {
             onClick={handleAdd}
             disabled={!product.available}
             aria-label={`Adicionar ${product.name} ao carrinho`}
-            className={`w-full sm:w-auto flex items-center justify-center gap-1.5 px-3.5 py-2.5 sm:py-2 rounded-lg text-xs font-semibold tracking-wide transition-all duration-200 cursor-pointer ${
+            className={`w-full sm:w-auto flex items-center justify-center gap-1.5 px-3.5 py-2.5 sm:py-2 rounded-lg text-xs font-semibold tracking-wide transition-colors duration-200 cursor-pointer ${
               added
                 ? "bg-emerald-500 text-white"
-                : "bg-[#005BFF] hover:bg-[#0047CC] text-white shadow-sm hover:shadow-md hover:shadow-[#005BFF]/25"
+                : "bg-[#005BFF] hover:bg-[#0047CC] text-white"
             } disabled:opacity-40 disabled:cursor-not-allowed`}
           >
             <ShoppingBag size={13} />
