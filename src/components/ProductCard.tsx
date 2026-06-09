@@ -52,10 +52,10 @@ export default function ProductCard({ product, index = 0 }: Props) {
 
   return (
     <motion.div
-      initial={{ opacity: 0, y: 20 }}
+      initial={{ opacity: 0, y: 14 }}
       whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true }}
-      transition={{ duration: 0.45, delay: (index % 4) * 0.07 }}
+      viewport={{ once: true, amount: 0.1 }}
+      transition={{ duration: 0.55, delay: (index % 4) * 0.06, ease: "easeOut" }}
       className="group bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col"
     >
       {/* Imagem */}

@@ -23,10 +23,10 @@ const categoryImages: Record<Category, string> = {
 export default function CategoryCard({ category, label, index }: Props) {
   return (
     <motion.div
-      initial={{ opacity: 0, y: 20 }}
+      initial={{ opacity: 0, y: 14 }}
       whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true }}
-      transition={{ duration: 0.5, delay: index * 0.1 }}
+      viewport={{ once: true, amount: 0.15 }}
+      transition={{ duration: 0.6, delay: index * 0.1, ease: "easeOut" }}
     >
       <Link
         href={`/catalogo?categoria=${category}`}

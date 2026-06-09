@@ -86,8 +86,8 @@ export default function HomePage() {
           <motion.div
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.4 }}
+            viewport={{ once: true, amount: 0.1 }}
+            transition={{ duration: 0.5, ease: "easeOut" }}
             className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 sm:gap-6 lg:gap-8"
           >
             {shopProducts.map((product, i) => (
@@ -110,10 +110,10 @@ export default function HomePage() {
       {/* ── CTA WHATSAPP — escuro, compacto ── */}
       <section className="bg-[#02040A] py-20">
         <motion.div
-          initial={{ opacity: 0, y: 20 }}
+          initial={{ opacity: 0, y: 14 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6 }}
+          viewport={{ once: true, amount: 0.2 }}
+          transition={{ duration: 0.65, ease: "easeOut" }}
           className="max-w-2xl mx-auto px-6 text-center"
         >
           <p className="text-white/40 text-[10px] font-semibold tracking-[0.35em] uppercase mb-5">
