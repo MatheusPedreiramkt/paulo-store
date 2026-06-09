@@ -54,7 +54,7 @@ export default function HomePage() {
             </Link>
           </div>
 
-          <div className="grid grid-cols-3 gap-4 sm:gap-6 lg:gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-5 sm:gap-6 lg:gap-8">
             {CATEGORIES.map((cat, i) => (
               <CategoryCard
                 key={cat}
@@ -88,7 +88,7 @@ export default function HomePage() {
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
             transition={{ duration: 0.4 }}
-            className="grid grid-cols-2 lg:grid-cols-4 gap-5 sm:gap-7 lg:gap-8"
+            className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 sm:gap-6 lg:gap-8"
           >
             {shopProducts.map((product, i) => (
               <ProductCard key={product.id} product={product} index={i} />

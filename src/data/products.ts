@@ -48,6 +48,59 @@ export const CATEGORY_LABELS: Record<Category, string> = {
 
 // ─── PRODUTO REAL ───────────────────────────────────────────────────────────
 
+const shortTactel: Product = {
+  id: "masc-3",
+  name: "Short Tactel 100% Poliéster com Bolso Frente e Atrás e Cadarço",
+  slug: "short-tactel",
+  description:
+    "Short tactel 100% poliéster com bolso na frente e atrás, e cadarço, variedade de cores.",
+  price: 45.9,
+  category: "moda-masculina",
+  sizes: ["P", "M", "G", "GG"],
+  colors: [],
+  gallery: ["/products/short-tactel/bege.webp"],
+  colorNote: "Cores variadas",
+  featured: true,
+  available: true,
+};
+
+const bermudaTactel: Product = {
+  id: "masc-2",
+  name: "Short Tactel 96% Poliéster e 10% Elastano, Perfuração Aço Inoxidável",
+  slug: "bermuda-tactel",
+  description:
+    "Short tactel 96% poliéster e 10% elastano, perfuração aço inoxidável, cores variadas.",
+  price: 45.9,
+  category: "moda-masculina",
+  sizes: ["G"],
+  colors: [
+    { name: "Vermelho", image: "/products/bermuda/vermelho.webp" },
+    { name: "Amarelo", image: "/products/bermuda/amarelo.webp" },
+    { name: "Azul", image: "/products/bermuda/azul.webp" },
+    { name: "Branco", image: "/products/bermuda/branco.webp" },
+  ],
+  featured: true,
+  available: true,
+};
+
+const bermudaLinho: Product = {
+  id: "masc-1",
+  name: "Short Linho com Cadarço de Almofadão, Perfuração Aço Inoxidável, Bolso Frente e Atrás",
+  slug: "bermuda-linho",
+  description:
+    "Short linho com cadarço de almofadão, perfuração aço inoxidável, bolso frente e atrás.",
+  price: 65.9,
+  category: "moda-masculina",
+  sizes: ["G"],
+  colors: [
+    { name: "Bege", image: "/products/bermuda-linho/bege.webp" },
+    { name: "Rosa", image: "/products/bermuda-linho/rosa.webp" },
+    { name: "Azul", image: "/products/bermuda-linho/azul.webp" },
+  ],
+  featured: true,
+  available: true,
+};
+
 const camisetaAlgodao: Product = {
   id: "real-1",
   name: "Camiseta 100% Algodão Fio 30.1 Penteado",
@@ -131,7 +184,7 @@ const femaleProducts: Product[] = [
     promoPrice: 85.9,
     promoLabel: "Leve 3 por R$ 85,90",
     category: "moda-intima-feminina",
-    sizes: ["P", "M", "G", "GG"],
+    sizes: ["Único (até 42)"],
     colors: [],
     gallery: ["/products/Calcinha-adulto-fui-duplo-liso.webp"],
     colorNote: "Cores variadas",
@@ -150,7 +203,7 @@ const femaleProducts: Product[] = [
     promoPrice: 88.9,
     promoLabel: "Leve 3 por R$ 88,90",
     category: "moda-intima-feminina",
-    sizes: ["P", "M", "G", "GG"],
+    sizes: ["G"],
     colors: [],
     gallery: ["/products/Calcinha-cottinho-adulto-algodão.webp"],
     colorNote: "Cores variadas",
@@ -169,7 +222,7 @@ const femaleProducts: Product[] = [
     promoPrice: 55.9,
     promoLabel: "Leve 3 por R$ 55,90",
     category: "moda-intima-feminina",
-    sizes: ["P", "M", "G", "GG"],
+    sizes: ["G"],
     colors: [],
     gallery: ["/products/Calcinha-adulto-microfibra.webp"],
     colorNote: "Cores variadas",
@@ -188,7 +241,7 @@ const femaleProducts: Product[] = [
     promoPrice: 75.9,
     promoLabel: "Leve 3 por R$ 75,90",
     category: "moda-intima-feminina",
-    sizes: ["P", "M", "G", "GG"],
+    sizes: ["36", "38", "40", "42"],
     colors: [],
     gallery: ["/products/Calcinha-fio-toda-na-renda-com-regulagem.webp"],
     colorNote: "Cores variadas",
@@ -245,7 +298,7 @@ const femaleProducts: Product[] = [
     promoPrice: 90.9,
     promoLabel: "Leve 3 por R$ 90,90",
     category: "moda-intima-feminina",
-    sizes: ["P", "M", "G", "GG"],
+    sizes: ["M", "G", "GG"],
     colors: [],
     gallery: ["/products/Sutiã-reforçado.webp"],
     colorNote: "Cores variadas",
@@ -264,7 +317,7 @@ const femaleProducts: Product[] = [
     promoPrice: 180.9,
     promoLabel: "Leve 3 por R$ 180,90",
     category: "moda-intima-feminina",
-    sizes: ["P", "M", "G", "GG"],
+    sizes: ["P", "M", "G"],
     colors: [],
     gallery: ["/products/Lingerie-Carollis-de-bojo.webp"],
     colorNote: "Cores variadas",
@@ -283,7 +336,7 @@ const femaleProducts: Product[] = [
     promoPrice: 95.9,
     promoLabel: "Leve 3 por R$ 95,90",
     category: "moda-intima-feminina",
-    sizes: ["Tamanho único"],
+    sizes: ["44", "46", "48", "50"],
     colors: [],
     gallery: ["/products/Calcinha-adulto-plus-size-lisa-cotton.webp"],
     colorNote: "Cores variadas",
@@ -302,7 +355,7 @@ const femaleProducts: Product[] = [
     promoPrice: 68.9,
     promoLabel: "Leve 3 por R$ 68,90",
     category: "moda-intima-feminina",
-    sizes: ["P", "M", "G", "GG"],
+    sizes: ["G"],
     colors: [],
     gallery: ["/products/Calcinha-adulto-BL-cotton.webp"],
     colorNote: "Cores variadas",
@@ -321,7 +374,7 @@ const femaleProducts: Product[] = [
     promoPrice: 68.9,
     promoLabel: "Leve 3 por R$ 68,90",
     category: "moda-intima-feminina",
-    sizes: ["P", "M", "G", "GG"],
+    sizes: ["36", "38", "40", "42"],
     colors: [],
     gallery: ["/products/Calcinha-adulto-fio-duplo-liso.webp"],
     colorNote: "Cores variadas",
@@ -359,7 +412,7 @@ const femaleProducts: Product[] = [
     promoPrice: 68.9,
     promoLabel: "Leve 3 por R$ 68,90",
     category: "moda-intima-feminina",
-    sizes: ["P", "M", "G", "GG"],
+    sizes: ["38", "40", "42"],
     colors: [],
     gallery: ["/products/Calcinha-de-algodão.webp"],
     colorNote: "Cores variadas",
@@ -370,6 +423,9 @@ const femaleProducts: Product[] = [
 ];
 
 export const products: Product[] = [
+  shortTactel,
+  bermudaTactel,
+  bermudaLinho,
   camisetaAlgodao,
   kitCuecaBoxer15,
   ...femaleProducts,

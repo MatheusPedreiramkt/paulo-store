@@ -80,19 +80,18 @@ export default function ProductCard({ product, index = 0 }: Props) {
         </div>
 
         {/* Badges */}
-        <div className="absolute top-3 left-3 flex flex-col gap-1.5">
-          {/* Badge customizado (ex: "15 UNIDADES") */}
+        <div className="absolute top-2.5 left-2.5 flex flex-col gap-1 max-w-[calc(100%-20px)]">
           {product.badge && (
-            <span className="px-2.5 py-1 rounded-sm bg-[#005BFF] text-white text-[9px] font-bold tracking-[0.15em] uppercase">
+            <span className="px-2 py-0.5 rounded-sm bg-[#005BFF] text-white text-[8px] sm:text-[9px] font-bold tracking-[0.12em] uppercase truncate">
               {product.badge}
             </span>
           )}
           {product.featured && !product.badge && (
-            <span className="px-2.5 py-1 rounded-sm bg-[#02040A] text-white text-[9px] font-bold tracking-[0.15em] uppercase">
+            <span className="px-2 py-0.5 rounded-sm bg-[#02040A] text-white text-[8px] sm:text-[9px] font-bold tracking-[0.12em] uppercase">
               DESTAQUE
             </span>
           )}
-          <span className="px-2.5 py-1 rounded-sm bg-white/90 backdrop-blur-sm text-[#005BFF] text-[9px] font-bold tracking-[0.12em] uppercase">
+          <span className="px-2 py-0.5 rounded-sm bg-white/90 backdrop-blur-sm text-[#005BFF] text-[8px] sm:text-[9px] font-bold tracking-[0.12em] uppercase truncate">
             {CATEGORY_LABELS[product.category]}
           </span>
         </div>
@@ -161,7 +160,7 @@ export default function ProductCard({ product, index = 0 }: Props) {
           </p>
         )}
 
-        <div className="flex items-center justify-between gap-2 mt-auto">
+        <div className="flex flex-col gap-2 mt-auto sm:flex-row sm:items-center sm:justify-between">
           <p className="text-gray-900 font-bold text-base">
             {formatCurrency(product.price)}
           </p>
@@ -170,7 +169,7 @@ export default function ProductCard({ product, index = 0 }: Props) {
             onClick={handleAdd}
             disabled={!product.available}
             aria-label={`Adicionar ${product.name} ao carrinho`}
-            className={`flex items-center gap-1.5 px-3.5 py-2 rounded-lg text-xs font-semibold tracking-wide transition-all duration-200 cursor-pointer flex-shrink-0 ${
+            className={`w-full sm:w-auto flex items-center justify-center gap-1.5 px-3.5 py-2.5 sm:py-2 rounded-lg text-xs font-semibold tracking-wide transition-all duration-200 cursor-pointer ${
               added
                 ? "bg-emerald-500 text-white"
                 : "bg-[#005BFF] hover:bg-[#0047CC] text-white shadow-sm hover:shadow-md hover:shadow-[#005BFF]/25"
