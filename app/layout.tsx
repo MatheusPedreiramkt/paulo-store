@@ -4,6 +4,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import CartDrawer from "@/components/CartDrawer";
 import WhatsAppButton from "@/components/WhatsAppButton";
+import MotionProvider from "@/components/MotionProvider";
 
 export const metadata: Metadata = {
   title: "Paulo Guimarães Store — Moda com Estilo e Elegância",
@@ -25,11 +26,13 @@ export default function RootLayout({
   return (
     <html lang="pt-BR" className="h-full">
       <body className="min-h-full flex flex-col bg-white text-gray-900 antialiased">
-        <Header />
-        <main className="flex-1">{children}</main>
-        <Footer />
-        <CartDrawer />
-        <WhatsAppButton variant="floating" />
+        <MotionProvider>
+          <Header />
+          <main className="flex-1">{children}</main>
+          <Footer />
+          <CartDrawer />
+          <WhatsAppButton variant="floating" />
+        </MotionProvider>
       </body>
     </html>
   );

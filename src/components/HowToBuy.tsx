@@ -35,10 +35,10 @@ export default function HowToBuy() {
     <section className="py-20 bg-[#F8FAFC]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
-          initial={{ opacity: 0, y: 24 }}
+          initial={{ opacity: 0, y: 16 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6 }}
+          viewport={{ once: true, amount: 0.15 }}
+          transition={{ duration: 0.55, ease: [0.22, 1, 0.36, 1] }}
           className="text-center mb-14"
         >
           <span className="text-[#005BFF] text-xs font-semibold tracking-[0.28em] uppercase">
@@ -56,10 +56,10 @@ export default function HowToBuy() {
           {steps.map((step, i) => (
             <motion.div
               key={step.number}
-              initial={{ opacity: 0, y: 28 }}
+              initial={{ opacity: 0, y: 16 }}
               whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: i * 0.1 }}
+              viewport={{ once: true, amount: 0.15 }}
+              transition={{ duration: 0.55, delay: i * 0.04, ease: [0.22, 1, 0.36, 1] }}
               className="relative bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow duration-300 group"
             >
               {/* Step number watermark */}
