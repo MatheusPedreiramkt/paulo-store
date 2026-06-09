@@ -34,7 +34,7 @@ export default function Hero() {
       <img
         src="/hero.webp"
         alt="Paulo Guimarães Store — Moda Masculina, Íntima Masculina e Íntima Feminina"
-        className="absolute inset-0 w-full h-full object-cover object-center"
+        className="absolute top-20 left-0 right-0 bottom-0 w-full h-[calc(100%-5rem)] object-cover object-top"
       />
 
       <div
