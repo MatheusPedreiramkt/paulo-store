@@ -46,7 +46,6 @@ export default function Header() {
             <Link href="/" className="flex items-center flex-shrink-0 group">
               <div
                 className="relative w-28 h-28 md:w-32 md:h-32 transition-transform duration-300 group-hover:scale-[1.03]"
-                style={{ filter: "drop-shadow(0 2px 8px rgba(0,0,0,0.09))" }}
               >
                 <Image
                   src="/logo.webp"
