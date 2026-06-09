@@ -34,13 +34,13 @@ export default function Hero() {
       <img
         src="/hero-mobile.webp"
         alt="Paulo Guimarães Store — Moda Masculina, Íntima Masculina e Íntima Feminina"
-        className="absolute top-20 left-0 right-0 bottom-0 w-full h-[calc(100%-5rem)] object-cover object-top sm:hidden"
+        className="absolute top-28 left-0 right-0 bottom-0 w-full h-[calc(100%-7rem)] object-cover object-top sm:hidden"
       />
       {/* eslint-disable-next-line @next/next/no-img-element */}
       <img
         src="/hero.webp"
         alt="Paulo Guimarães Store — Moda Masculina, Íntima Masculina e Íntima Feminina"
-        className="absolute top-20 left-0 right-0 bottom-0 w-full h-[calc(100%-5rem)] object-cover object-top hidden sm:block"
+        className="absolute top-28 left-0 right-0 bottom-0 w-full h-[calc(100%-7rem)] object-cover object-top hidden sm:block"
       />
 
       <div
