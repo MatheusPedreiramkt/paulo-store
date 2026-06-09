@@ -32,9 +32,15 @@ export default function Hero() {
     >
       {/* eslint-disable-next-line @next/next/no-img-element */}
       <img
+        src="/hero-mobile.webp"
+        alt="Paulo Guimarães Store — Moda Masculina, Íntima Masculina e Íntima Feminina"
+        className="absolute top-20 left-0 right-0 bottom-0 w-full h-[calc(100%-5rem)] object-cover object-top sm:hidden"
+      />
+      {/* eslint-disable-next-line @next/next/no-img-element */}
+      <img
         src="/hero.webp"
         alt="Paulo Guimarães Store — Moda Masculina, Íntima Masculina e Íntima Feminina"
-        className="absolute top-20 left-0 right-0 bottom-0 w-full h-[calc(100%-5rem)] object-cover object-top"
+        className="absolute top-20 left-0 right-0 bottom-0 w-full h-[calc(100%-5rem)] object-cover object-top hidden sm:block"
       />
 
       <div
@@ -57,14 +63,12 @@ export default function Hero() {
         >
           <div className="max-w-[650px]">
             <h1 className="text-white font-bold text-[28px] sm:text-[38px] lg:text-[56px] leading-[0.98] mb-6">
-              Moda masculina,
-              <br />
-              íntima masculina
-              <br />e feminina.
+              Moda que combina
+              <br />com você.
             </h1>
 
             <p className="text-white/72 text-base sm:text-lg leading-relaxed max-w-xl mb-6 sm:mb-8">
-              Peças selecionadas para quem busca conforto, estilo e qualidade.
+              Coleções selecionadas para homens e mulheres.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-3 mb-6 sm:mb-8">
