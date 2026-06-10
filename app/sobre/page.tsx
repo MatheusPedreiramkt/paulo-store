@@ -73,7 +73,7 @@ export default function SobrePage() {
               <div className="relative">
                 <div className="w-64 h-64 rounded-3xl bg-gradient-to-br from-[#005BFF]/20 to-[#1E8BFF]/10 border border-[#005BFF]/20 flex items-center justify-center">
                   <Image
-                    src="/logo-1.webp"
+                    src="/logo.webp"
                     alt="Paulo Guimarães Store"
                     width={160}
                     height={160}
