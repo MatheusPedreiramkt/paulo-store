@@ -35,8 +35,8 @@ export default function Header() {
         transition={{ duration: 0.6, ease: "easeOut" }}
         className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
           scrolled
-            ? "bg-white border-b border-gray-200 shadow-sm shadow-black/[0.04]"
-            : "bg-white border-b border-gray-100"
+            ? "bg-black border-b border-white/10 shadow-sm shadow-black/40"
+            : "bg-black border-b border-white/[0.06]"
         }`}
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -48,7 +48,7 @@ export default function Header() {
                 className="relative w-28 h-28 md:w-32 md:h-32 transition-transform duration-300 group-hover:scale-[1.03]"
               >
                 <Image
-                  src="/logo.webp"
+                  src="/logo-1.webp"
                   alt="Paulo Guimarães Store"
                   fill
                   priority
@@ -63,7 +63,7 @@ export default function Header() {
                 <Link
                   key={link.href}
                   href={link.href}
-                  className="relative group text-gray-400 hover:text-[#02040A] text-[11px] tracking-[0.22em] uppercase font-semibold transition-colors duration-300"
+                  className="relative group text-gray-500 hover:text-white text-[11px] tracking-[0.22em] uppercase font-semibold transition-colors duration-300"
                 >
                   {link.label}
                   <span className="absolute -bottom-1 left-0 w-0 h-px bg-[#005BFF] transition-all duration-300 group-hover:w-full" />
@@ -76,7 +76,7 @@ export default function Header() {
               <button
                 onClick={toggleCart}
                 aria-label="Abrir carrinho"
-                className="relative p-3 rounded-full text-gray-400 hover:text-[#02040A] hover:bg-gray-50 transition-all duration-200 cursor-pointer"
+                className="relative p-3 rounded-full text-gray-500 hover:text-white hover:bg-white/10 transition-all duration-200 cursor-pointer"
               >
                 <ShoppingBag size={21} />
                 {count > 0 && (
@@ -94,7 +94,7 @@ export default function Header() {
               <button
                 onClick={() => setMenuOpen(!menuOpen)}
                 aria-label="Menu"
-                className="md:hidden p-3 rounded-full text-gray-400 hover:text-[#02040A] hover:bg-gray-50 transition-all duration-200 cursor-pointer"
+                className="md:hidden p-3 rounded-full text-gray-500 hover:text-white hover:bg-white/10 transition-all duration-200 cursor-pointer"
               >
                 {menuOpen ? <X size={21} /> : <Menu size={21} />}
               </button>
@@ -112,7 +112,7 @@ export default function Header() {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -8 }}
             transition={{ duration: 0.2 }}
-            className="fixed top-28 left-0 right-0 z-40 bg-white border-b border-gray-100 shadow-md shadow-black/[0.04] md:hidden"
+            className="fixed top-28 left-0 right-0 z-40 bg-black border-b border-white/10 shadow-md shadow-black/40 md:hidden"
           >
             <nav className="flex flex-col px-6 py-1">
               {navLinks.map((link) => (
@@ -120,7 +120,7 @@ export default function Header() {
                   key={link.href}
                   href={link.href}
                   onClick={() => setMenuOpen(false)}
-                  className="py-4 text-gray-400 hover:text-[#02040A] text-[11px] tracking-[0.25em] uppercase font-semibold border-b border-gray-50 last:border-0 transition-colors duration-200"
+                  className="py-4 text-gray-500 hover:text-white text-[11px] tracking-[0.25em] uppercase font-semibold border-b border-white/[0.06] last:border-0 transition-colors duration-200"
                 >
                   {link.label}
                 </Link>

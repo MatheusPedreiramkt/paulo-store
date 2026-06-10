@@ -70,7 +70,7 @@ const bermudaTactel: Product = {
   slug: "bermuda-tactel",
   description:
     "Short tactel 96% poliéster e 10% elastano, perfuração aço inoxidável, cores variadas.",
-  price: 45.9,
+  price: 55.9,
   category: "moda-masculina",
   sizes: ["G"],
   colors: [
