@@ -177,13 +177,16 @@ const camisaOversize: Product = {
   available: true,
 };
 
-const kitCuecaBoxer15: Product = {
+const cuecaBoxer: Product = {
   id: "real-2",
-  name: "Kit Cueca Boxer Masculina - 15 Unidades",
-  slug: "kit-cueca-boxer-15-unidades",
+  name: "Cueca Boxer Masculina",
+  slug: "cueca-boxer-masculina",
   description:
-    "Kit com 15 cuecas boxer masculinas. Confortáveis, macias e ideais para uso diário. Modelos enviados em cores variadas.",
-  price: 85.9,
+    "Cueca boxer masculina confortável, macia e ideal para uso diário. Disponível em cores variadas.",
+  price: 45.9,
+  promoQty: 3,
+  promoPrice: 85.9,
+  promoLabel: "Leve 3 por R$ 85,90",
   category: "moda-intima-masculina",
   sizes: ["P", "M", "G", "GG"],
   colors: [],
@@ -192,10 +195,9 @@ const kitCuecaBoxer15: Product = {
     "/products/cueca-box-15un/image-1.webp",
   ],
   colorNote: "Cores variadas",
-  badge: "15 UNIDADES",
-  metaTitle: "Kit Cueca Boxer Masculina 15 Unidades | Paulo Guimarães Store",
+  metaTitle: "Cueca Boxer Masculina | Paulo Guimarães Store",
   metaDescription:
-    "Kit com 15 cuecas boxer masculinas, conforto e excelente custo-benefício. Disponível nos tamanhos P ao GG.",
+    "Cueca boxer masculina confortável e durável. Leve 3 por R$ 85,90. Disponível nos tamanhos P ao GG.",
   featured: true,
   available: true,
 };
@@ -456,6 +458,6 @@ export const products: Product[] = [
   shortTactel,
   bermudaTactel,
   bermudaLinho,
-  kitCuecaBoxer15,
+  cuecaBoxer,
   ...femaleProducts,
 ];
