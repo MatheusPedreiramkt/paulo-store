@@ -26,6 +26,7 @@ const COLOR_HEX: Record<string, string> = {
   "Champagne": "#e8d5b0",
   "Preto/Branco/Cinza": "#555555",
   "Azul/Preto/Cinza": "#334466",
+  "Cores variadas": "linear-gradient(135deg, #f87171, #facc15, #4ade80, #60a5fa)",
 };
 
 export function getColorHex(name: string): string {

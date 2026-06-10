@@ -120,7 +120,7 @@ export default function ProductCard({ product, index = 0 }: Props) {
                       ? "ring-2 ring-offset-1 ring-gray-400 scale-110"
                       : "ring-1 ring-black/10"
                   }`}
-                  style={{ backgroundColor: getColorHex(c.name) }}
+                  style={{ background: getColorHex(c.name) }}
                 />
               ))}
               {product.colors.length > 5 && (
