@@ -158,6 +158,25 @@ const camisetaAlgodao: Product = {
   available: true,
 };
 
+const camisaOversize: Product = {
+  id: "masc-4",
+  name: "Camisa Oversize",
+  slug: "camisa-oversize",
+  description:
+    "Camisa masculina no estilo oversize, com caimento amplo e moderno, ideal para o dia a dia com muito estilo e conforto.",
+  price: 85.9,
+  category: "moda-masculina",
+  sizes: ["Único"],
+  colors: [
+    { name: "Branco", image: "/products/camisa-oversize/branco.webp" },
+    { name: "Marçala", image: "/products/camisa-oversize/marçala.webp" },
+    { name: "Preto", image: "/products/camisa-oversize/preto.webp" },
+    { name: "Verde Militar", image: "/products/camisa-oversize/verde-militar.webp" },
+  ],
+  featured: true,
+  available: true,
+};
+
 const kitCuecaBoxer15: Product = {
   id: "real-2",
   name: "Kit Cueca Boxer Masculina - 15 Unidades",
@@ -432,10 +451,11 @@ const femaleProducts: Product[] = [
 ];
 
 export const products: Product[] = [
+  camisetaAlgodao,
+  camisaOversize,
   shortTactel,
   bermudaTactel,
   bermudaLinho,
-  camisetaAlgodao,
   kitCuecaBoxer15,
   ...femaleProducts,
 ];
