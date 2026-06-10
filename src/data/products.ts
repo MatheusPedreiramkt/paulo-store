@@ -93,10 +93,10 @@ const bermudaTactel: Product = {
 
 const bermudaLinho: Product = {
   id: "masc-1",
-  name: "Short Linho com Cadarço de Almofadão, Perfuração Aço Inoxidável, Bolso Frente e Atrás",
+  name: "Short Linho com Cadarço de Algodão, Perfuração Aço Inoxidável, Bolso Frente e Atrás",
   slug: "bermuda-linho",
   description:
-    "Short linho com cadarço de almofadão, perfuração aço inoxidável, bolso frente e atrás.",
+    "Short linho com cadarço de algodão, perfuração aço inoxidável, bolso frente e atrás.",
   price: 65.9,
   category: "moda-masculina",
   sizes: ["G"],
