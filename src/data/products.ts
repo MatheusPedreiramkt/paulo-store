@@ -62,7 +62,6 @@ const shortTactel: Product = {
   sizes: ["P", "M", "G", "GG"],
   colors: [
     { name: "Bege", image: "/products/short-tactel/bege.webp" },
-    { name: "Branco", image: "/products/short-tactel/branco.webp" },
     { name: "Azul Royal", image: "/products/short-tactel/azul-royal.webp" },
     { name: "Verde Água", image: "/products/short-tactel/verde-agua.webp" },
     { name: "Verde Folha", image: "/products/short-tactel/verde-folha.webp" },
