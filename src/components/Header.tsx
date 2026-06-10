@@ -40,7 +40,7 @@ export default function Header() {
         }`}
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex items-center justify-between h-28">
+          <div className="flex items-center justify-between h-20">
 
             {/* Logo */}
             <Link href="/" className="flex items-center flex-shrink-0 group">
@@ -112,7 +112,7 @@ export default function Header() {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -8 }}
             transition={{ duration: 0.2 }}
-            className="fixed top-28 left-0 right-0 z-40 bg-black border-b border-white/10 shadow-md shadow-black/40 md:hidden"
+            className="fixed top-20 left-0 right-0 z-40 bg-black border-b border-white/10 shadow-md shadow-black/40 md:hidden"
           >
             <nav className="flex flex-col px-6 py-1">
               {navLinks.map((link) => (
