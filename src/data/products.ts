@@ -56,8 +56,8 @@ const shortTactel: Product = {
     "Short tactel 100% poliéster com bolso na frente e atrás, e cadarço, variedade de cores.",
   price: 45.9,
   promoQty: 3,
-  promoPrice: 140.9,
-  promoLabel: "Leve 3 por R$ 140,90",
+  promoPrice: 127.9,
+  promoLabel: "Leve 3 por R$ 127,90",
   category: "moda-masculina",
   sizes: ["P", "M", "G", "GG"],
   colors: [
