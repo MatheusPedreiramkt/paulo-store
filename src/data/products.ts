@@ -55,11 +55,19 @@ const shortTactel: Product = {
   description:
     "Short tactel 100% poliéster com bolso na frente e atrás, e cadarço, variedade de cores.",
   price: 45.9,
+  promoQty: 3,
+  promoPrice: 140.9,
+  promoLabel: "Leve 3 por R$ 140,90",
   category: "moda-masculina",
   sizes: ["P", "M", "G", "GG"],
-  colors: [],
-  gallery: ["/products/short-tactel/bege.webp"],
-  colorNote: "Cores variadas",
+  colors: [
+    { name: "Bege", image: "/products/short-tactel/bege.webp" },
+    { name: "Branco", image: "/products/short-tactel/branco.webp" },
+    { name: "Azul Royal", image: "/products/short-tactel/azul-royal.webp" },
+    { name: "Verde Água", image: "/products/short-tactel/verde-agua.webp" },
+    { name: "Verde Folha", image: "/products/short-tactel/verde-folha.webp" },
+    { name: "Verde Militar", image: "/products/short-tactel/verde-militar.webp" },
+  ],
   featured: true,
   available: true,
 };
